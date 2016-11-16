@@ -3,13 +3,13 @@ const bunyan = require('bunyan');
 
 const env = process.env.NODE_ENV || 'development';
 
-const log = bunyan.createLogger({
-  name: 'finders',
-  serializers: bunyan.stdSerializers,
-  level: loggerUtils.getLogLevel(env),
-  streams: loggerUtils.getStreams(env),
-});
-
-log.info({ logger: log }, `Created logger for ${env}.`);
+function log(name) {
+  return bunyan.createLogger({
+    name,
+    serializers: bunyan.stdSerializers,
+    level: loggerUtils.getLogLevel(env),
+    streams: loggerUtils.getStreams(env),
+  });
+}
 
 module.exports = log;
