@@ -1,7 +1,7 @@
 {
   "name": "nhsuk-bunyan-logger",
-  "version": "0.0.1",
-  "description": "bunyan splunk logger for nhsuk apps",
+  "version": "0.1.0",
+  "description": "bunyan logger for nhsuk apps",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -21,13 +21,15 @@
       "post-rewrite": "npm run lint && npm run generate-coverage && npm run check-coverage"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhsuk/bunyan-logger.git"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "bunyan": "^1.8.5",
     "is-nan": "^1.2.1",
-    "require-environment-variables": "^1.1.2",
-    "splunk-bunyan-logger": "^0.9.2",
     "snyk": "^1.19.1"
   },
   "devDependencies": {

@@ -10,7 +10,7 @@ function log(name) {
     name,
     serializers: bunyan.stdSerializers,
     level: loggerUtils.getLogLevel(env),
-    streams: loggerUtils.getStreams(env),
+    streams: [{ stream: process.stdout }],
   });
 }
 
