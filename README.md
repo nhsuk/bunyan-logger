@@ -1,4 +1,4 @@
-# NHSUK bunyan splunk logger
+# NHSUK bunyan logger
 
 [![Build Status](https://travis-ci.org/nhsuk/bunyan-logger.svg?branch=master)](https://travis-ci.org/nhsuk/bunyan-logger)
 [![Coverage Status](https://coveralls.io/repos/github/nhsuk/bunyan-logger/badge.svg)](https://coveralls.io/github/nhsuk/bunyan-logger)
@@ -7,8 +7,6 @@
 A little library to ease the sharing of the setup of the `bunyan` logger.
 
 An instance of a `bunyan` logger is created via the [constructor-api](https://github.com/trentm/node-bunyan#constructor-api) and returned.
-
-When `NODE_ENV` is set to `production` the logger creates a [`splunk-bunyan-logger`](https://github.com/splunk/splunk-bunyan-logger) stream. All other environments use `stdout`. `stdout` is synchronous and should not be used in environments where performance is a concern.
 
 
 ## Installation
@@ -36,12 +34,6 @@ A number of environment variables are used, as detailed below.
 | Variable                         | Description                                                                            | Default                  | Required        |
 |:---------------------------------|:---------------------------------------------------------------------------------------|:-------------------------|-----------------|
 | `NODE_ENV`                       | node environment                                                                       | development              |                 |
-| `SPLUNK_HEC_TOKEN`               | [HTTP Event Collector token](http://dev.splunk.com/view/event-collector/SP-CAAAE7C)    |                          | In `production` |
-| `SPLUNK_HEC_ENDPOINT`            | [HTTP Event Collector endpoint](http://dev.splunk.com/view/event-collector/SP-CAAAE7H) |                          | In `production` |
 | `LOG_LEVEL`                      | [bunyan log level](https://github.com/trentm/node-bunyan#levels)                       | Depends on `NODE_ENV`    |                 |
 
 A note on `LOG_LEVEL` - there are default values set depending on the environment. However, if `LOG_LEVEL` is set this value will override any defaults there might be. 
-
-[require-environment-variables](https://www.npmjs.com/package/require-environment-variables)
-is used to check for the existence of required environment variables and will
-throw an exception should they not be present.
