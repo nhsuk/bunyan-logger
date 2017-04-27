@@ -7,16 +7,16 @@
     "lint": "eslint .",
     "test": "NODE_ENV=test mocha --recursive test",
     "istanbul": "NODE_ENV=test istanbul",
-    "generate-coverage": "npm run istanbul -- cover _mocha -- --recursive",
+    "generate-coverage": "yarn run istanbul -- cover _mocha -- --recursive",
     "check-coverage": "istanbul check-coverage --config .istanbul.yml",
     "upload-coverage-coveralls": "cat ./coverage/lcov.info | coveralls",
     "watch-lint": "esw --watch .",
-    "watch-test": "npm run test -- --watch --reporter min",
+    "watch-test": "yarn run test -- --watch --reporter min",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect",
-    "precommit": "npm run git-hooks",
-    "postrewrite": "npm run git-hooks",
-    "git-hooks": "npm run lint && npm run generate-coverage && npm run check-coverage"
+    "prepublish": "yarn run snyk-protect",
+    "precommit": "yarn run git-hooks",
+    "postrewrite": "yarn run git-hooks",
+    "git-hooks": "yarn run lint && yarn run generate-coverage && yarn run check-coverage"
   },
   "repository": {
     "type": "git",

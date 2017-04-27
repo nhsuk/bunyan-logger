@@ -9,10 +9,10 @@ A little library to ease the sharing of the setup of the `bunyan` logger.
 An instance of a `bunyan` logger is created via the [constructor-api](https://github.com/trentm/node-bunyan#constructor-api) and returned.
 
 
-## Installation
+## Install
 
-* For a specific release version (recommended): `npm install git://github.com/nhsuk/bunyan-logger.git#x.x.x` or
-* For the very latest version (not recommended): `npm install nhsuk/bunyan-logger` or
+* A specific release version (recommended). e.g via yarn: `yarn install git://github.com/nhsuk/bunyan-logger.git#x.x.x`
+* The latest version (not recommended). e.g. via npm: `npm install nhsuk/bunyan-logger`
 * Any of the other ways to [install an npm package](https://docs.npmjs.com/cli/install)
 
 ## Usage
