@@ -1,22 +1,22 @@
 {
   "name": "nhsuk-bunyan-logger",
-  "version": "0.1.0",
-  "description": "bunyan logger for nhsuk apps",
+  "version": "1.2.0",
+  "description": "Facade over bunyan logger.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "test": "NODE_ENV=test mocha --recursive test",
     "istanbul": "NODE_ENV=test istanbul",
-    "generate-coverage": "npm run istanbul -- cover _mocha -- --recursive",
+    "generate-coverage": "yarn run istanbul -- cover _mocha -- --recursive",
     "check-coverage": "istanbul check-coverage --config .istanbul.yml",
     "upload-coverage-coveralls": "cat ./coverage/lcov.info | coveralls",
     "watch-lint": "esw --watch .",
-    "watch-test": "npm run test -- --watch --reporter min",
+    "watch-test": "yarn run test -- --watch --reporter min",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect",
-    "precommit": "npm run git-hooks",
-    "postrewrite": "npm run git-hooks",
-    "git-hooks": "npm run lint && npm run generate-coverage && npm run check-coverage"
+    "prepublish": "yarn run snyk-protect",
+    "precommit": "yarn run git-hooks",
+    "postrewrite": "yarn run git-hooks",
+    "git-hooks": "yarn run lint && yarn run generate-coverage && yarn run check-coverage"
   },
   "repository": {
     "type": "git",
@@ -25,24 +25,24 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "bunyan": "^1.8.5",
+    "bunyan": "^1.8.10",
     "is-nan": "^1.2.1",
-    "snyk": "^1.19.1"
+    "snyk": "^1.29.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "coveralls": "^2.11.15",
-    "eslint": "^3.10.2",
-    "eslint-config-airbnb": "^13.0.0",
+    "coveralls": "^2.13.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-json": "^1.2.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-mocha": "^4.7.0",
     "eslint-plugin-react": "^6.7.1",
-    "eslint-watch": "^2.1.14",
-    "husky": "^0.13.2",
+    "eslint-watch": "^3.1.0",
+    "husky": "^0.13.3",
     "istanbul": "^0.4.5",
-    "mocha": "^3.1.2"
+    "mocha": "^3.3.0"
   },
   "snyk": true
 }
