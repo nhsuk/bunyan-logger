@@ -1,7 +1,7 @@
 {
   "name": "nhsuk-bunyan-logger",
-  "version": "0.1.0",
-  "description": "bunyan logger for nhsuk apps",
+  "version": "1.2.0",
+  "description": "Facade over bunyan logger.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
