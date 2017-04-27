@@ -6,14 +6,18 @@
 
 A little library to ease the sharing of the setup of the `bunyan` logger.
 
-An instance of a `bunyan` logger is created via the [constructor-api](https://github.com/trentm/node-bunyan#constructor-api) and returned.
-
+An instance of a `bunyan` logger is created via the
+[constructor-api](https://github.com/trentm/node-bunyan#constructor-api) and
+returned.
 
 ## Install
 
-* A specific release version (recommended). e.g via yarn: `yarn install git://github.com/nhsuk/bunyan-logger.git#x.x.x`
-* The latest version (not recommended). e.g. via npm: `npm install nhsuk/bunyan-logger`
-* Any of the other ways to [install an npm package](https://docs.npmjs.com/cli/install)
+* A specific release version (recommended). e.g via yarn:
+  `yarn install git://github.com/nhsuk/bunyan-logger.git#x.x.x`
+* The latest version (not recommended). e.g. via npm:
+  `npm install nhsuk/bunyan-logger`
+* Any of the other ways to
+  [install an npm package](https://docs.npmjs.com/cli/install)
 
 ## Usage
 
@@ -24,16 +28,20 @@ log.METHOD('message goes here');
 ```
 
 Where `LOGGER-NAME` is the name you want for the logger.
-Where `METHOD` is any of the supported bunyan [logger methods](https://github.com/trentm/node-bunyan#log-method-api).
-Check out the [bunyan documentation](https://www.npmjs.com/package/bunyan) for additional information on the API.
+Where `METHOD` is any of the supported bunyan
+[logger methods](https://github.com/trentm/node-bunyan#log-method-api). Check
+out the [bunyan documentation](https://www.npmjs.com/package/bunyan) for
+additional information on the API.
 
-## Environment Variables
+## Environment Variables
 
 A number of environment variables are used, as detailed below.
 
-| Variable                         | Description                                                                            | Default                  | Required        |
-|:---------------------------------|:---------------------------------------------------------------------------------------|:-------------------------|-----------------|
-| `NODE_ENV`                       | node environment                                                                       | development              |                 |
-| `LOG_LEVEL`                      | [bunyan log level](https://github.com/trentm/node-bunyan#levels)                       | Depends on `NODE_ENV`    |                 |
+| Variable    | Description                                                      | Default               |
+|:------------|:-----------------------------------------------------------------|:----------------------|
+| `NODE_ENV`  | node environment                                                 | development           |
+| `LOG_LEVEL` | [bunyan log level](https://github.com/trentm/node-bunyan#levels) | Depends on `NODE_ENV` |
 
-A note on `LOG_LEVEL` - there are default values set depending on the environment. However, if `LOG_LEVEL` is set this value will override any defaults there might be. 
+A note on `LOG_LEVEL` - there are default values set depending on the
+environment. However, if `LOG_LEVEL` is set this value will override any
+defaults there might be. 
