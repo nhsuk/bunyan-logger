@@ -2,7 +2,4 @@ language: node_js
 node_js:
 - node
 script:
-- yarn run lint
-- yarn run generate-coverage
-- yarn run check-coverage
-- yarn run upload-coverage-coveralls
+- yarn run travis
