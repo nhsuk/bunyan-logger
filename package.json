@@ -1,6 +1,6 @@
 {
   "name": "nhsuk-bunyan-logger",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Facade over bunyan logger.",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,16 @@
     "istanbul": "NODE_ENV=test istanbul",
     "generate-coverage": "yarn run istanbul -- cover _mocha -- --recursive",
     "check-coverage": "istanbul check-coverage --config .istanbul.yml",
-    "upload-coverage-coveralls": "cat ./coverage/lcov.info | coveralls",
+    "upload-coverage": "cat ./coverage/lcov.info | coveralls",
     "watch-lint": "esw --watch .",
     "watch-test": "yarn run test -- --watch --reporter min",
-    "snyk-protect": "snyk protect",
-    "prepublish": "yarn run snyk-protect",
+    "snyk": "snyk",
+    "snyk-travis": "yarn run snyk -- test --org=nhsuk && yarn run snyk -- monitor --org=nhsuk",
+    "prepublish": "yarn run git-hooks",
+    "prepush": "yarn run git-hooks",
     "precommit": "yarn run git-hooks",
-    "postrewrite": "yarn run git-hooks",
-    "git-hooks": "yarn run lint && yarn run generate-coverage && yarn run check-coverage"
+    "git-hooks": "yarn run lint && yarn run generate-coverage && yarn run check-coverage && yarn run snyk -- test",
+    "travis": "yarn run git-hooks && yarn run upload-coverage && yarn run snyk-travis"
   },
   "repository": {
     "type": "git",
@@ -26,8 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "bunyan": "^1.8.10",
-    "is-nan": "^1.2.1",
-    "snyk": "^1.29.0"
+    "is-nan": "^1.2.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -42,7 +43,8 @@
     "eslint-watch": "^3.1.0",
     "husky": "^0.13.3",
     "istanbul": "^0.4.5",
-    "mocha": "^3.3.0"
+    "mocha": "^3.3.0",
+    "snyk": "^1.29.0"
   },
   "snyk": true
 }
