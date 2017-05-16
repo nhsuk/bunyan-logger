@@ -1,5 +1,12 @@
-version: v1.5.0
-ignore: {}
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:ms:20170412':
+    - node-pre-gyp > tar-pack > debug > ms:
+        reason: None given
+        expires: '2017-06-15T09:43:31.733Z'
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:request:20160119':
     - splunk-bunyan-logger > splunk-logging > request:
