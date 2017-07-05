@@ -19,13 +19,13 @@ describe('logger', () => {
     it('should throw an exception when no name is provided', () => {
       // eslint-disable-next-line global-require
       expect(() => { require('../../index')(); })
-      .to.throw(AssertionError, 'name must not be empty');
+        .to.throw(AssertionError, 'name must not be empty');
     });
 
     it('should throw an exception when an empty name is provided', () => {
       // eslint-disable-next-line global-require
       expect(() => { require('../../index')(''); })
-      .to.throw(AssertionError, 'name must not be empty');
+        .to.throw(AssertionError, 'name must not be empty');
     });
   });
 });
