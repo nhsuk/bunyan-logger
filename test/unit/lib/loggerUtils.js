@@ -81,7 +81,7 @@ describe('loggerUtils', () => {
     it('should throw an error', () => {
       expect(() => { utils.getLogLevel('anything'); })
         .to.throw(AssertionError,
-        `${invalidNumericLogLevel} is not a valid LOG_LEVEL`);
+          `${invalidNumericLogLevel} is not a valid LOG_LEVEL`);
     });
   });
 
@@ -100,7 +100,7 @@ describe('loggerUtils', () => {
     it('should throw an error', () => {
       expect(() => { utils.getLogLevel('anything'); })
         .to.throw(AssertionError,
-        `${wordLogLevel} is not a valid LOG_LEVEL`);
+          `${wordLogLevel} is not a valid LOG_LEVEL`);
     });
   });
 });
