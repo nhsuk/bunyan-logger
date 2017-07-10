@@ -1,6 +1,6 @@
 {
   "name": "nhsuk-bunyan-logger",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Facade over bunyan logger.",
   "main": "index.js",
   "scripts": {
