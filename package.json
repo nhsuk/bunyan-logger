@@ -12,13 +12,11 @@
     "upload-coverage": "cat ./coverage/lcov.info | coveralls",
     "watch-lint": "esw --watch .",
     "watch-test": "yarn test -- --watch --reporter min",
-    "snyk": "snyk",
-    "snyk-travis": "yarn snyk -- test --org=nhsuk && yarn snyk -- monitor --org=nhsuk",
     "prepublish": "yarn git-hooks",
-    "prepush": "yarn git-hooks",
+    "prepush": "yarn git-hooks && yarn snyk test",
     "precommit": "yarn git-hooks",
-    "git-hooks": "yarn lint && yarn generate-coverage && yarn check-coverage && yarn snyk -- test",
-    "travis": "yarn git-hooks && yarn upload-coverage && yarn snyk-travis"
+    "git-hooks": "yarn lint && yarn generate-coverage && yarn check-coverage",
+    "travis": "yarn git-hooks && yarn upload-coverage"
   },
   "repository": {
     "type": "git",
@@ -44,6 +42,5 @@
     "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
     "snyk": "^1.36.2"
-  },
-  "snyk": true
+  }
 }
