@@ -1,7 +1,6 @@
 # NHSUK Bunyan logger
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/nhsuk/bunyan-logger.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/nhsuk/bunyan-logger.svg?branch=master)](https://travis-ci.org/nhsuk/bunyan-logger)
 [![Coverage Status](https://coveralls.io/repos/github/nhsuk/bunyan-logger/badge.svg)](https://coveralls.io/github/nhsuk/bunyan-logger)
 [![Known Vulnerabilities](https://snyk.io/test/github/nhsuk/bunyan-logger/badge.svg)](https://snyk.io/test/github/nhsuk/bunyan-logger)
