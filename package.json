@@ -1,24 +1,22 @@
 {
   "name": "nhsuk-bunyan-logger",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Facade over bunyan logger.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "NODE_ENV=test mocha --recursive test",
+    "coverage-generate": "yarn istanbul -- cover _mocha -- --recursive",
+    "coverage-check": "istanbul check-coverage --config .istanbul.yml",
+    "coverage-upload": "cat ./coverage/lcov.info | coveralls",
+    "git-hook": "yarn lint && yarn coverage-generate && yarn coverage-check",
     "istanbul": "NODE_ENV=test istanbul",
-    "generate-coverage": "yarn run istanbul -- cover _mocha -- --recursive",
-    "check-coverage": "istanbul check-coverage --config .istanbul.yml",
-    "upload-coverage": "cat ./coverage/lcov.info | coveralls",
-    "watch-lint": "esw --watch .",
-    "watch-test": "yarn run test -- --watch --reporter min",
-    "snyk": "snyk",
-    "snyk-travis": "yarn run snyk -- test --org=nhsuk && yarn run snyk -- monitor --org=nhsuk",
-    "prepublish": "yarn run git-hooks",
-    "prepush": "yarn run git-hooks",
-    "precommit": "yarn run git-hooks",
-    "git-hooks": "yarn run lint && yarn run generate-coverage && yarn run check-coverage && yarn run snyk -- test",
-    "travis": "yarn run git-hooks && yarn run upload-coverage && yarn run snyk-travis"
+    "lint": "eslint .",
+    "lint-watch": "esw --watch .",
+    "prepublish": "yarn git-hook",
+    "prepush": "yarn git-hook && yarn snyk test",
+    "precommit": "yarn git-hook",
+    "test": "NODE_ENV=test mocha --recursive test",
+    "test-ci": "yarn git-hook && yarn coverage-upload",
+    "test-watch": "yarn test -- --watch --reporter min"
   },
   "repository": {
     "type": "git",
@@ -33,10 +31,10 @@
   "devDependencies": {
     "chai": "^4.0.2",
     "coveralls": "^2.13.1",
-    "eslint": "^4.1.1",
+    "eslint": "^4.2.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-config-nhsuk": "^0.3.0",
-    "eslint-plugin-import": "^2.6.1",
+    "eslint-config-nhsuk": "^0.3.1",
+    "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-mocha": "^4.11.0",
     "eslint-watch": "^3.1.2",
@@ -44,6 +42,5 @@
     "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
     "snyk": "^1.36.2"
-  },
-  "snyk": true
+  }
 }
