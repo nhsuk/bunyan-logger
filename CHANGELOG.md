@@ -1,4 +1,4 @@
-1.5.0 / 2017-09-04
+1.5.0 / 2017-09-05
 ==================
 - Update dependencies to latest versions
 
@@ -24,7 +24,6 @@
 1.1.0 / 2016-11-24
 =================
 - Log to `stdout` in all environments. A change from previously logging to Splunk in production
-
 
 < 1.1.0
 ========
