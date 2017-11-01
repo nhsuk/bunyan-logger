@@ -1,6 +1,6 @@
 {
   "name": "nhsuk-bunyan-logger",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Facade over bunyan logger.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,6 @@
     "istanbul": "NODE_ENV=test istanbul",
     "lint": "eslint .",
     "lint-watch": "esw --watch .",
-    "prepublish": "yarn git-hook",
     "prepush": "yarn git-hook && yarn snyk test",
     "precommit": "yarn git-hook",
     "test": "NODE_ENV=test mocha --recursive test",
