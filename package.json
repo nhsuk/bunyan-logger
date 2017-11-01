@@ -1,6 +1,6 @@
 {
   "name": "nhsuk-bunyan-logger",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "Facade over bunyan logger.",
   "main": "index.js",
   "scripts": {
@@ -25,22 +25,22 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "bunyan": "^1.8.12",
-    "is-nan": "^1.2.1"
+    "bunyan": "^1.0.0",
+    "is-nan": "^1.0.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^4.0.0",
     "coveralls": "^3.0.0",
-    "eslint": "^4.6.1",
+    "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-config-nhsuk": "^0.7.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-json": "^1.2.0",
-    "eslint-plugin-mocha": "^4.11.0",
-    "eslint-watch": "^3.1.2",
-    "husky": "^0.14.2",
-    "istanbul": "^0.4.5",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-json": "^1.0.0",
+    "eslint-plugin-mocha": "^4.0.0",
+    "eslint-watch": "^3.0.0",
+    "husky": "^0.14.0",
+    "istanbul": "^0.4.0",
     "mocha": "^4.0.0",
-    "snyk": "^1.40.2"
+    "snyk": "^1.0.0"
   }
 }

@@ -1,3 +1,7 @@
+1.6.0 / 2017-11-01
+==================
+- Update npm dependencies
+
 1.5.1 / 2017-09-05
 ==================
 - Correct path for npm badge
