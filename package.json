@@ -1,6 +1,6 @@
 {
   "name": "nhsuk-bunyan-logger",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Facade over bunyan logger.",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "coveralls": "^3.0.0",
     "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^12.0.0",
-    "eslint-config-nhsuk": "^0.8.0",
+    "eslint-config-nhsuk": "^0.9.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-json": "^1.0.0",
     "eslint-plugin-mocha": "^4.0.0",
