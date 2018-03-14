@@ -1,3 +1,7 @@
+1.9.0 / 2018-03-14
+==================
+- New version of `eslint-config-nhsuk`
+
 1.8.0 / 2018-03-13
 ==================
 - Update npm dependencies
