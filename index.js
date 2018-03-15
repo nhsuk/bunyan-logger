@@ -7,9 +7,9 @@ const env = process.env.NODE_ENV || 'development';
 function log(name) {
   assert(name, 'name must not be empty');
   return bunyan.createLogger({
+    level: loggerUtils.getLogLevel(env),
     name,
     serializers: bunyan.stdSerializers,
-    level: loggerUtils.getLogLevel(env),
     streams: [{ stream: process.stdout }],
   });
 }
