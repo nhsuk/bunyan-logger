@@ -1,3 +1,8 @@
+1.11.0 / 2018-04-13
+===================
+- Remove snyk
+- Update npm dependencies
+
 1.10.0 / 2018-03-15
 ===================
 - Update to `eslint-config-nhsuk@0.13.0`
