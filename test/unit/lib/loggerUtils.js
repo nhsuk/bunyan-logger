@@ -1,7 +1,7 @@
+const AssertionError = require('assert').AssertionError;
+const bunyan = require('bunyan');
 const chai = require('chai');
 const utils = require('../../../lib/loggerUtils');
-const bunyan = require('bunyan');
-const AssertionError = require('assert').AssertionError;
 
 const expect = chai.expect;
 

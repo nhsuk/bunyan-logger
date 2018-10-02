@@ -1,6 +1,6 @@
-const loggerUtils = require('./lib/loggerUtils');
-const bunyan = require('bunyan');
 const assert = require('assert');
+const bunyan = require('bunyan');
+const loggerUtils = require('./lib/loggerUtils');
 
 const env = process.env.NODE_ENV || 'development';
 
