@@ -3,7 +3,7 @@
 [![GitHub Release](https://img.shields.io/github/release/nhsuk/bunyan-logger.svg)](https://github.com/nhsuk/bunyan-logger/releases/latest/)
 [![npm version](https://badge.fury.io/js/nhsuk-bunyan-logger.svg)](https://badge.fury.io/js/nhsuk-bunyan-logger)
 [![Greenkeeper badge](https://badges.greenkeeper.io/nhsuk/bunyan-logger.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/nhsuk/bunyan-logger.svg?branch=master)](https://travis-ci.org/nhsuk/bunyan-logger)
+![Build Status](https://github.com/nhsuk/bunyan-logger/workflows/CI/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/nhsuk/bunyan-logger/badge.svg)](https://coveralls.io/github/nhsuk/bunyan-logger)
 [![Known Vulnerabilities](https://snyk.io/test/github/nhsuk/bunyan-logger/badge.svg?targetFile=package.json)](https://snyk.io/test/github/nhsuk/bunyan-logger?targetFile=package.json)
 
