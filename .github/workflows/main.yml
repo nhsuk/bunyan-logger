@@ -21,7 +21,7 @@ jobs:
     - name: Run lint
       run: yarn lint
     - name: Generate code coverage
-      run: yarn coverage-generate && yarn coverage-check
+      run: yarn test-with-coverage
     - name: Upload code coverage
       uses: coverallsapp/github-action@v1.0.1
       with:
