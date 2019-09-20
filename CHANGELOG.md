@@ -1,11 +1,7 @@
-1.13.0 / 2019-09-20
+1.12.0 / 2019-09-20
 ===================
 - Update npm dependencies
-
-1.12.0 / 2018-10-03
-===================
-- Update npm dependencies
-- Add snyk
+- Replace Travis CI with GitHub Actions
 
 1.11.0 / 2018-04-13
 ===================
