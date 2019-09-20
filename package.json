@@ -8,11 +8,15 @@
     "git-hook": "yarn lint && yarn test",
     "lint": "eslint .",
     "lint-watch": "esw --watch .",
-    "prepush": "yarn git-hook",
-    "precommit": "yarn git-hook",
     "test": "nyc mocha --exit --recursive test",
     "test-watch": "yarn test --reporter min --watch",
     "test-with-coverage": "nyc --reporter=lcov --reporter=cobertura mocha --exit --recursive test --reporter mocha-junit-reporter"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn git-hook",
+      "pre-push": "yarn git-hook"
+    }
   },
   "repository": {
     "type": "git",
