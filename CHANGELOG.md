@@ -1,3 +1,12 @@
+1.13.0 / 2019-09-20
+===================
+- Update npm dependencies
+
+1.12.0 / 2018-10-03
+===================
+- Update npm dependencies
+- Add snyk
+
 1.11.0 / 2018-04-13
 ===================
 - Remove snyk

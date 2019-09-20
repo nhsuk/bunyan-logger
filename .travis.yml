@@ -1,14 +1,8 @@
 language: node_js
-node_js: node
+node_js: '10'
 cache: yarn
 
-before_install: yarn global add greenkeeper-lockfile@1
-
-before_script: greenkeeper-lockfile-update
-
-script: yarn run test-ci
-
-after_script: greenkeeper-lockfile-upload
+script: yarn test-ci
 
 deploy:
   provider: npm
