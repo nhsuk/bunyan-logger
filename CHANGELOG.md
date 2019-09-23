@@ -1,3 +1,7 @@
+1.12.1 / 2019-09-24
+===================
+- Remove coveralls dependency
+
 1.12.0 / 2019-09-20
 ===================
 - Update npm dependencies
