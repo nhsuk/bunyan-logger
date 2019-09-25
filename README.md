@@ -1,7 +1,7 @@
 # NHSUK Bunyan logger
 
-[![GitHub Release](https://img.shields.io/github/release/nhsuk/bunyan-logger.svg)](https://github.com/nhsuk/bunyan-logger/releases/latest/)
-[![npm version](https://badge.fury.io/js/nhsuk-bunyan-logger.svg)](https://badge.fury.io/js/nhsuk-bunyan-logger)
+[![GitHub Release](https://img.shields.io/github/v/release/nhsuk/bunyan-logger)](https://github.com/nhsuk/bunyan-logger/releases/latest/)
+[![npm version](https://img.shields.io/npm/v/nhsuk-bunyan-logger)](https://www.npmjs.com/package/nhsuk-bunyan-logger)
 [![Greenkeeper badge](https://badges.greenkeeper.io/nhsuk/bunyan-logger.svg)](https://greenkeeper.io/)
 [![Build Status](https://github.com/nhsuk/bunyan-logger/workflows/CI/badge.svg)](https://github.com/nhsuk/bunyan-logger/actions)
 [![Coverage Status](https://coveralls.io/repos/github/nhsuk/bunyan-logger/badge.svg)](https://coveralls.io/github/nhsuk/bunyan-logger)
