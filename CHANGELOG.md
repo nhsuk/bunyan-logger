@@ -1,3 +1,8 @@
+1.13.0 / 2019-09-30
+===================
+- Update npm dependencies
+- Use `Number.isNaN` in place of external `is-nan` dependency
+
 1.12.2 / 2019-09-25
 ===================
 - Update README badges
