@@ -1,7 +1,7 @@
 const chai = require('chai');
-const AssertionError = require('assert').AssertionError;
+const { AssertionError } = require('assert');
 
-const expect = chai.expect;
+const { expect } = chai;
 
 describe('logger', () => {
   describe('normal operation', () => {
