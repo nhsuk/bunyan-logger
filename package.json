@@ -7,7 +7,7 @@
     "git-hook": "yarn lint && yarn test",
     "lint": "eslint .",
     "lint-watch": "esw --watch .",
-    "test": "nyc mocha --exit --recursive test",
+    "test": "nyc --nycrc-path=.nycrc.json mocha --exit --recursive test",
     "test-watch": "yarn test --reporter min --watch",
     "test-with-coverage": "nyc --reporter=lcov --reporter=cobertura mocha --exit --recursive test --reporter mocha-junit-reporter"
   },
@@ -30,7 +30,7 @@
     "chai": "^4.0.0",
     "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-nhsuk": "^0.21.0",
+    "eslint-config-nhsuk": "^0.23.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-json": "^1.0.0",
     "eslint-plugin-mocha": "^6.0.0",

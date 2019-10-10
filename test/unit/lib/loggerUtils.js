@@ -1,9 +1,9 @@
-const AssertionError = require('assert').AssertionError;
+const { AssertionError } = require('assert');
 const bunyan = require('bunyan');
 const chai = require('chai');
 const utils = require('../../../lib/loggerUtils');
 
-const expect = chai.expect;
+const { expect } = chai;
 
 describe('loggerUtils', () => {
   describe('getLogLevel when not set by env vars', () => {
