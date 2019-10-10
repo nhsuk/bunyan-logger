@@ -1,3 +1,7 @@
+1.13.1 / 2019-10-10
+===================
+- Fix code coverage check
+
 1.13.0 / 2019-09-30
 ===================
 - Update npm dependencies
